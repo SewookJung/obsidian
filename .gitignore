@@ -1,0 +1,13 @@
+# Workspace (기기마다 달라서 충돌 원인)
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Cache
+.obsidian/cache/
+
+# Remotely Save 플러그인 (인증 정보 포함 가능)
+.obsidian/plugins/remotely-save/
+
+# Obsidian 휴지통
+.trash/
