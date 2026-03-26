@@ -8,13 +8,13 @@ Obsidian Vault 기반의 개인 지식 관리 시스템. 제텔카스텐 + PARA 
 
 ## 폴더 구조 요약
 
-- 1~3: 제텔카스텐 (Inbox, Literature Notes, Permanent Notes)
-- 4~7: PARA (Projects, Areas, Resources, Archive)
-- 8~10: 보조 (MOC, Templates, Attachments)
+- 01~03: 제텔카스텐 (Inbox, Literature Notes, Permanent Notes)
+- 04~07: PARA (Projects, Areas, Resources, Archive)
+- 08~10: 보조 (MOC, Templates, Attachments)
 
 ### Resources vs Attachments
 
-- `6. Resources/` — 마크다운 노트만 (원본 자료를 설명/연결하는 노트)
+- `06. Resources/` — 마크다운 노트만 (원본 자료를 설명/연결하는 노트)
 - `10. Attachments/` — 물리적 파일만 (PDF, 이미지 등 마크다운이 아닌 파일)
 - 이 둘을 섞지 말 것
 
@@ -23,8 +23,8 @@ Obsidian Vault 기반의 개인 지식 관리 시스템. 제텔카스텐 + PARA 
 - `.obsidian/` 설정 파일은 Obsidian이 자동 관리하므로, 확인 없이 수정하지 말 것
 - YAML frontmatter 구조를 유지할 것
 - `[[링크]]`를 깨뜨리지 말 것 — 지식 그래프가 손상됨
-- 영구 노트(`3. Permanent Notes/`)는 flat 구조 유지 — 하위 폴더로 분류하지 말 것
-- 템플릿은 `9. Templates/`에 위치하며 Obsidian 템플릿 시스템이 참조함
+- 영구 노트(`03. Permanent Notes/`)는 flat 구조 유지 — 하위 폴더로 분류하지 말 것
+- 템플릿은 `09. Templates/`에 위치하며 Obsidian 템플릿 시스템이 참조함
 
 ## 컨벤션
 
