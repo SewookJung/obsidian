@@ -24,7 +24,7 @@
 
 - **Projects**: 마감 있는 진행 중 프로젝트
 - **Areas**: 지속 관리 영역 (업무, 회의 등)
-- **Resources**: 원본 자료를 설명하는 마크다운 노트 (링크, 출처, 메모 등)
+- **Resources**: 가공되지 않은 원본 텍스트/웹 클리핑이 담겨있거나, Attachments의 물리적 파일을 링크해 둔 마크다운 노트
 - **Archive**: 완료/비활성 항목
 
 ### 보조
@@ -93,4 +93,5 @@ Inbox에 쌓인 항목을 열어보고 목적에 맞게 분배한다. (목표: I
 
 - Obsidian
   - remotely-save: 기기 간 동기화
+  - Obsidian CLI: 터미널에서 볼트 조작
 - Git & GitHub
