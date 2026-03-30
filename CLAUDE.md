@@ -27,12 +27,12 @@ Claude는 구조적/기계적 보조만 수행한다:
 ### 폴더 구조
 
 ```
-0. MOC/
-1. Inbox/
-2. Literature Notes/
-3. Permanent Notes/    ← flat 구조 (하위 폴더 없음)
-4. Templates/
-5. Attachments/        ← 물리적 파일만 (PDF, 이미지 등)
+00. MOC/
+01. Inbox/
+02. Literature Notes/
+03. Permanent Notes/   ← flat 구조 (하위 폴더 없음)
+09. Templates/
+10. Attachments/       ← 물리적 파일만 (PDF, 이미지 등)
 ```
 
 > 번호 04~08이 비어있는 이유: 추후 PARA(Projects, Areas, Resources, Archive 등) 도입 시 충돌 없이 확장하기 위함.
@@ -48,6 +48,7 @@ Claude는 구조적/기계적 보조만 수행한다:
 - `tags`: 태그 목록
 - `created`: 생성 시각 (`YYYY-MM-DD HH:mm`)
 - `updated`: 마지막 수정 시각 (`YYYY-MM-DD HH:mm`)
+- `aliases`: 동일 개념의 영어/한국어 별칭 목록 (Permanent Note, MOC에서 사용)
 
 YAML frontmatter 구조를 임의로 수정하지 않는다.
 
@@ -67,7 +68,23 @@ YAML frontmatter 구조를 임의로 수정하지 않는다.
 ### 연결 (Linking)
 
 - 구체적인 개념, 기술, 도구, 인물 등은 본문에서 `[[키워드]]`로 직접 연결한다.
+- `[[링크]]`는 별도 섹션에 모으지 말고, 본문 문장 안에서 문맥적으로 연결한다.
 - Permanent Note는 최소 1개 이상의 `[[링크]]`를 포함해야 한다.
+
+**`[[링크]]` 네이밍 컨벤션:**
+
+| 분류 | 규칙 | 예시 |
+|------|------|------|
+| 기술/도구 | 영문 공식명 | `[[React]]`, `[[Django]]` |
+| 약어 | 대문자 | `[[API]]`, `[[REST]]`, `[[TDD]]` |
+| 서비스/플랫폼 | 공식 브랜드명 | `[[YouTube]]`, `[[AWS]]` |
+| 인물 | 원어 표기 | `[[Martin Fowler]]`, `[[김영한]]` |
+| 추상 개념 | 영어/한국어 모두 가능 | `[[Clean Architecture]]`, `[[클린 아키텍처]]` |
+| 복합어 | 띄어쓰기 구분 | `[[React Hooks]]`, `[[객체 지향 프로그래밍]]` |
+
+- 단수형 사용 (`[[Hook]]` not `[[Hooks]]`)
+- 명사형 사용 (`[[리팩토링]]` not `[[리팩토링하기]]`)
+- 영어/한국어 양쪽 표기가 필요한 개념은 `aliases`로 통합
 
 ### Literature Note → Permanent Note 승격 기준
 
