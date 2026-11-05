@@ -1,5 +1,12 @@
 {
   "trashOption": "system",
   "showLineNumber": true,
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "10. Attachments",
+  "userIgnoreFilters": [
+    "09. Templates/",
+    "CLAUDE.MD",
+    "README.MD"
+  ]
 }

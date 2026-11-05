@@ -1,11 +1,10 @@
 ---
 tags: []
 aliases: []
-created: {{date:YYYY-MM-DD}} {{time:HH:mm}}
-updated: {{date:YYYY-MM-DD}} {{time:HH:mm}}
+created: <% tp.date.now("YYYY-MM-DD HH:mm") %>
+updated: <% tp.date.now("YYYY-MM-DD HH:mm") %>
 ---
-
-
+# <% tp.file.title %>
 
 ---
 ## 연결

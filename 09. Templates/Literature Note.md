@@ -1,12 +1,9 @@
 ---
 tags: [source/]
-created: {{date:YYYY-MM-DD}} {{time:HH:mm}}
-updated: {{date:YYYY-MM-DD}} {{time:HH:mm}}
+created: <% tp.date.now("YYYY-MM-DD HH:mm") %>
+updated: <% tp.date.now("YYYY-MM-DD HH:mm") %>
 ---
-
-## 출처
-- 저자:
-- 링크:
+# <% tp.file.title %>
 
 ## 핵심 내용
 
@@ -14,3 +11,6 @@ updated: {{date:YYYY-MM-DD}} {{time:HH:mm}}
 ## 내 생각
 
 
+## 출처
+- 저자:
+- 링크:

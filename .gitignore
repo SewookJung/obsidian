@@ -9,5 +9,8 @@
 # Remotely Save 플러그인 (인증 정보 포함 가능)
 .obsidian/plugins/remotely-save/
 
+# Agent Client 플러그인 (채팅 기록·세션 목록 포함)
+.obsidian/plugins/agent-client/
+
 # Obsidian 휴지통
 .trash/
